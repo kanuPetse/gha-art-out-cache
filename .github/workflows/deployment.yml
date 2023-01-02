@@ -44,7 +44,7 @@ jobs:
       - name: Build Project
         run: npm run build
       - name: Display Output
-        run: find dist -type f -name '*.js' -execdir echo '{}' ';'
+        run: find dist -type f -name '*.js' -execdir echo 'script-file={}' ';'
   deploy:
     needs: build
     runs-on: ubuntu-latest
