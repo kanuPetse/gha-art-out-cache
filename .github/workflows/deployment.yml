@@ -65,5 +65,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: dist-files
+      - name: Display Artifacts
+        run: ls
       - name: Deploy Application
         run: echo "Deploying application..."
